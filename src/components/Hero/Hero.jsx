@@ -1,5 +1,5 @@
 import React from "react";
-import heroImg from "../../assets/hero.png";
+import heroImg from "../../assets/heronew.png";
 import styles from "./Hero.module.css";
 import { TypeAnimation } from "react-type-animation";
 import { motion as Motion } from "framer-motion";
