@@ -1,0 +1,58 @@
+@import "../../vars.css";
+
+.footer {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  padding: 40px 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.brand {
+  font-weight: 600;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: var(--color-text);
+  transition: color 0.3s;
+}
+
+.nav li a:hover {
+  color: var(--color-dark);
+}
+
+.social {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.social a {
+  color: var(--color-text);
+  transition: color 0.3s ease;
+}
+
+.social a:hover {
+  color: var(--color-dark);
+}
