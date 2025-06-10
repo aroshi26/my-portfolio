@@ -15,14 +15,14 @@
   flex-wrap: nowrap;
   width: 100%;
   min-height: 100vh; /* ✅ This fills full screen */
-  background-color: #000000;
+ 
   
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  max-width: 700px;
+  max-width: 1000px;
   align-items: flex-start;
   color: var(--color-text);
   margin-top: 0; /* ✅ Remove fixed spacing */
