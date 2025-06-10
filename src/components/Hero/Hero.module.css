@@ -9,12 +9,13 @@
   padding: 0 8%;
   margin: 0 auto;
   gap: 100px;
-  max-width: 1400px;
+  max-width: 2000px;
   z-index: 1;
   overflow: hidden;
   flex-wrap: nowrap;
   width: 100%;
-  min-height: 100vh; /* ✅ This fills full screen */
+  min-height: 100vh;
+  margin-bottom: auto; /* ✅ This fills full screen */
  
   
 }
