@@ -18,7 +18,7 @@ export const Footer = () => {
 
       <div className={styles.social}>
         <a href="https://github.com/aroshi26" target="_blank" rel="noreferrer"><FaGithub /></a>
-        <a href="www.linkedin.com/in/aroshi-muthumala-1a23b5294" target="_blank" rel="noreferrer"><FaLinkedin /></a>
+        <a href="https://linkedin.com/in/aroshi-muthumala-1a23b5294" target="_blank" rel="noreferrer"><FaLinkedin /></a>
         <a href="mailto:aroshimuthumala@gmail.com"><FaEnvelope /></a>
       </div>
     </footer>

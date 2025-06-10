@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import styles from "./Navbar.module.css";
-
 import menuIcon from "../assets/nav/menuIcon.png";
 import menucloseIcon from "../assets/nav/menucloseIcon.png";
 
@@ -10,16 +9,14 @@ export const Navbar = () => {
   const [activeSection, setActiveSection] = useState("home");
   const lastScrollY = useRef(0);
 
-  // Scroll hide/show
   useEffect(() => {
     const handleScroll = () => {
       const currentY = window.scrollY;
 
+      // If scrolling down and passed 100px, hide
       if (currentY > lastScrollY.current && currentY > 100) {
-        // Scrolling down
         setIsVisible(false);
       } else {
-        // Scrolling up
         setIsVisible(true);
       }
 
@@ -30,7 +27,7 @@ export const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Section tracking with IntersectionObserver
+  // Active section logic
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
     const observer = new IntersectionObserver(
